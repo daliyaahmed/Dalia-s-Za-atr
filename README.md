@@ -1,5 +1,12 @@
 # Dalia-s-Za-atr
 This online food ordering system streamlines ordering, enhances customer experience, and improves restaurant efficiency. The two-sided website lets restaurant employees manage orders and update menu items, while customers can browse the menu, place orders, and manage their accounts.
+
+
+
+
+
+
+
 Purpose
 The purpose of this online food ordering system is to create a user-friendly application that allows customers to easily place orders online. The system aims to streamline the ordering process, enhance customer experience, and improve operational efficiency for the restaurant. It's a two-sided website: one side is accessed by the restaurant employees to manage orders and update menu items, and the other side is for customers to browse the menu, place orders, and manage their accounts.
 
