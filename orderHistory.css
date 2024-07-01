@@ -1,0 +1,61 @@
+header, footer {
+    background-color: #1f0e06; 
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px; 
+    color: white;
+    opacity: 1;
+}
+  
+  footer p {
+    font-size: 18px; 
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body{
+    overflow-y: auto;
+}
+
+body {
+    background: url('background2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Sail", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+  }
+
+
+button {
+    background-color: #ffa101;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}

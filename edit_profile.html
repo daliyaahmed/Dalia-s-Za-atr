@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="editProfileCSS.css">
+    <script src="editProfile.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poiret+One&family=Sail&family=Splash&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>EDIT PROFILE</h2>
+
+    <!-- Full form -->
+    <form id="edit-profile-form" method="post" action="edit_profile.php">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="tel" placeholder="Enter Phone" name="phone" required>
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" placeholder="Enter Address" name="address" required>
+
+        <label for="city"><b>City</b></label>
+        <input type="text" placeholder="Enter City" name="city" required>
+
+        <button type="submit" class="submit-button" id="saveChanges">Save Changes</button>
+
+    </form>
+
+    <button type="button" onclick="window.location.href='menuPage.html';">Exit without making changes</button>
+</div>
+
+</body>
+</html>

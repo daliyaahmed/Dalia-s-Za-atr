@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="menuPage.css">
+    <script src="menuPage.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poiret+One&family=Sail&family=Splash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <hr>
+        <h1>Dalia's <img src="logo.png" width="100">Za'atar</h1>
+        <hr>
+    </header>
+
+    <div class="button-container">
+    
+        <form method="post" action="menuPage.php">
+            <button type="submit" name="cartButton" id="cartButton">
+                <img src="cart.jpeg" alt="Cart Icon" width="35">
+            </button>
+            <br>
+            <input type="hidden" id="orderDetails" name="orderDetails">
+        </form>
+        
+        <!-- Button to edit profile -->
+        <div class="edit-profile-button">
+            <a href="edit_profile.html">
+                <img src="editprofile.jpeg" alt="Edit Profile" width="50" style="background-color: transparent;">
+            </a>
+        </div>
+
+        <!-- Button to view history -->
+        <div class="history-button">
+            <a href="orderHistory.html">
+                <img src="orderHistory.png" alt="order history" width="50" style="background-color: transparent;">
+            </a>
+        </div>
+        
+        <button type="button" onclick="window.location.href='loginhtml.html';">LOGOUT</button> 
+    </div>
+
+    <hr>
+   <div class="container">
+        <div class="box">New</div>
+        <div class="box">Soups</div>
+        <div class="box">Salads</div>
+        <div class="box">Appetizers</div>
+        <div class="box">Mains</div>
+        <div class="box">Grill</div>
+        <div class="box">Desserts</div>
+        <div class="box" id="beverages">
+            Beverages
+            <select id="beveragesDropdown">
+                <option value=""></option>
+                <option value="FRESH JUICES">FRESH JUICES</option>
+                <option value="MILKSHAKES">MILKSHAKES</option>
+                <option value="HOT BEVERAGES">HOT BEVERAGES</option>
+            </select>
+        </div>
+
+    </div> 
+
+
+
+    <br><h2>New at Dalia's Za'atar!</h2>
+    <div class="food1">
+       
+         <div class="foodbox" data-id="1">
+            <img src="seafoodPlatter.jpg" alt="seafood platter" width="200">
+            <h3>Seafood Platter<br>RM 65.00</h3>
+            <p>A luxurious assortment of the ocean’s finest treasures, featuring fresh prawns, succulent oysters, tender crab, and more, served with zesty lemon wedges and tangy dipping sauces for an unforgettable maritime feast!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="10">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart" >Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="2">
+            <img src="stuffedChicken.png" alt="stuffed chicken" width="200">
+            <h3>Stuffed Golden Chicken<br>RM 39.90</h3>
+            <p>A feast of golden-brown chicken, generously filled with a flavorful medley of herbs and spices, for a dining experience that’s truly golden!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+    <br><h2>Soups</h2>
+    <div class="food2">    
+        <div class="foodbox" data-id="3">
+            <img src="sweetCornSoup.jpeg" alt="Creamy Chicken Sweet Corn Soup" width="200">
+            <h3>Creamy Chicken Sweet Corn Soup <br> RM 10.90</h3>
+            <p>Harmonious blend of tender chicekn pieces and sweet corn kernals, simmered gently in a rich, creamy broth.<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="4">
+            <img src="mushroomSoup.jpg" alt="Cream of Mushroom Soup" width="200">
+            <h3>Cream of Mushroom Soup <br> RM 8.50</h3>
+            <p>A velvety blend of fresh mushrooms and cream, delivering a warm, earthy flavor that’s both comforting and delicious!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="5">
+            <img src="chickCreamSoup.jpg" alt="Chicken Cream Soup" width="200">
+            <h3>Chicken Cream Soup <br> RM 8.50</h3>
+            <p>A heartwarming blend of tender chicken pieces, enveloped in a rich, smooth cream base, seasoned to perfection for a comforting hug in a bowl!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="foodbox" data-id="6">
+            <img src="harira.jpg" alt="Harira Soup" width="200">
+            <h3>Morroccan Harira Soup <br> RM 11.50</h3>
+            <p>A velvety, herb-rich, tomato-based soup with lentils and chickpeas, bringing the warmth and zest of Moroccan tradition to your table!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <hr>
+    <br><h2>Salads</h2> 
+    <div class="food3">
+        <div class="foodbox" data-id="7">    
+            <img src="oliveSalad.jpeg" alt="olive salad" width="200">
+            <h3>Olive Salad <br> RM 7.90</h3>
+            <p>A vibrant medley of olives, vegetables, and a tangy dressing, delivering a burst of Mediterranean freshness with every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="8"> 
+            <img src="tabbouleh.jpg" alt="tabbouleh" width="200">
+            <h3>Tabbouleh <br> RM 7.90</h3>
+            <p>A refreshing medley of parsley, mint, and bulgur wheat, bursting with the vibrant flavors of the Mediterranean!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="9"> 
+            <img src="eggplantSalad.jpg" alt="fetush eggplant salad" width="200">
+            <h3>Fettush Eggplant<br> RM 7.90</h3>
+            <p>A delightful fusion of grilled eggplant and crispy pita bread, tossed with fresh vegetables and a tangy dressing, for a taste of the Mediterranean in every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="10">
+            <img src="daliasSalad.jpg" alt="Dalia's Za'atar Salad" width="200">
+            <h3>Dalia's Za'atar Salad<br> RM 7.90</h3>
+            <p>A refreshing blend of crisp vegetables, sprinkled with the earthy, citrusy flavors of Za’atar spice, for a taste of the Middle East in every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+    <br><h2>Appetizers</h2>
+    <div class="food4">  
+
+        <div class="foodbox" data-id="11">
+            <img src="khibeh.jpg" alt="khibeh" width="200">
+            <h3>Khibeh<br>RM 10.00 (Portion Size: 3 pieces)</h3>
+            <p>A savory delight from the Levant, featuring a shell of spiced ground meat and bulgur wheat, filled with a flavorful meat mixture.<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="12">
+            <img src="sambosa.jpg" alt="sambosa" width="200">
+            <h3>Sambosa<br>RM 9.50 (Portion Size: 3 pieces)</h3>
+            <p>A crispy pocket of delight, filled with a savory surprise, taking your taste buds on a Middle Eastern journey!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="13"> 
+            <img src="falafel.jpg" alt="falafel" width="200">
+            <h3>Falafel<br>RM 10.00 (Portion Size: 3 pieces)</h3>
+            <p>A crispy, golden sphere of flavor, packed with protein-rich chickpeas and a blend of spices, for a Middle Eastern treat that’s both delicious and nutritious!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="14"> 
+            <img src="fouul.jpg" alt="fouul" width="200">
+            <h3>Fouul<br>RM 12.30</h3>
+            <p>A hearty, protein-packed fava bean stew, seasoned with cumin and drizzled with olive oil for a taste of Egypt!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="food5">
+        <div class="foodbox" data-id="15"> 
+            <img src="babaGhanoush.jpg" alt="Baba Ghanoush" width="200">
+            <h3>Baba Ghanoush<br>RM 12.00</h3>
+            <p>A smoky, creamy dip of roasted eggplant, tahini, and garlic, offering a taste of the Levant in every scoop!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="16"> 
+            <img src="hummus.jpg" alt="" width="200">
+            <h3>Hummus<br>RM 11.00</h3>
+            <p>A smooth, rich blend of chickpeas, tahini, and lemon juice, this Middle Eastern classic is a delight with every dip!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+    <br><h2>Mains</h2>
+    <div class="food6">
+        <div class="foodbox" data-id="17">   
+            <img src="mandi.png" alt="Chicken Mandi Rice" width="200">
+            <h3>Mandi Rice<br> RM 15.00</h3>
+            <p>A fragrant feast of tender meat and spiced rice, a taste of the Middle East in every bite!<br>Meat choices : <br>Chicken<br>Lamb<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="18">
+            <img src="maqloubaChicken.jpg" alt="Maqlouba Chicken" width="200">
+            <h3>Maqlouba Chicken<br>RM 35.00</h3>
+            <p>A flavorful feast of chicken, rice, and vegetables, cooked and flipped to perfection, embodying the essence of Palastenian cuisine!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="19">
+            <img src="Tangine.jpg" alt="Tangine" width="200">
+            <h3>Tangine<br>RM 26.00</h3>
+            <p>A slow-simmered stew of tender meat and aromatic spices, cooked in a traditional North African clay pot, for a taste that’s as rich as its history!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>   
+        <div class="foodbox" data-id="20"> 
+            <img src="kabsa.jpg" alt="Kabsa Chicken" width="200">
+            <h3>Kabsa Chicken<br>RM 40.00</h3>
+            <p>A fragrant medley of spiced long-grain rice and tender meat, Kabsa is a culinary journey to the Arabian Peninsula in every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div> 
+    </div>
+    <div class="food7"> 
+        <div class="foodbox" data-id="21"> 
+            <img src="fahsa.jpg" alt="Fahsa" width="200">
+            <h3>Fahsa<br>RM 23.00</h3>
+            <p>A traditional Yemeni stew of tender lamb or beef, Fahsa brings the rich flavors and warmth of Yemen to your plate!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>  
+        <div class="foodbox" data-id="22">  
+            <img src="shishKebab.jpg" alt="Shish Kebab with Rice" width="200">
+            <h3>Shish Kebab served with Rice<br>RM 35.00</h3>
+            <p>Juicy skewered meat and vibrant vegetables, grilled to perfection and served over fluffy rice!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div> 
+    <hr>   
+    <br><h2>Family Sets</h2>
+    <div class="food8"> 
+        <div class="foodbox" data-id="23">
+            <img src="kharjLamb.jpeg" alt="Kharij Lamb" width="200">
+            <h3>Kharij Lamb Set<br>RM 65.00</h3>
+            <p>A succulent mixed lamb, stuffed with aromatic Basmati rice and mixed nuts, served with baked vegetables, hommus, Arabic salad, garlic sauce, and Arabic bread. A soft drink completes this feast, ideal for 4-5 people!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="24">
+            <img src="mandi.png" alt="Chicken Mandi Rice" width="200">
+            <h3>Mandi Rice Set<br> RM 15.00</h3>
+            <p>A fragrant feast of tender meat and spiced rice, a taste of the Middle East in every bite! Ideal for 4-5 people.<br>Meat choices : <br>Chicken<br>Lamb<br><br></p> 
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>  
+        </div>
+    </div>
+    
+    <hr>
+    <br><h2>Grill</h2>
+    <div class="food9">    
+
+        <div class="foodbox" data-id="25">
+            <img src="mixedgrill.jpg" alt="mixed grill" width="200">
+            <h3>Mixed Grill<br>RM 37.90</h3>
+            <p>A symphony of flavors in every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="26">
+            <img src="lambchop.jpg" alt="Lamb Chop" width="200">
+            <h3>Lamb Chop<br>RM 42.00</h3>
+            <p>Succulent tenderness that melts in your mouth!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="27">
+            <img src="daliasMixedGrill.jpg" alt="Dalia’s Za’atar Mixed Grill Special" width="200">
+            <h3>Dalia’s Za’atar Mixed Grill Special<br>RM 18.90</h3>
+            <p>A medley of meats, seasoned with the tangy twist of Za’atr!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="28">
+            <img src="shishTawook.jpg" alt="Spicy Shish Tawook" width="200">
+            <h3>Spicy Shish Tawook<br>RM 11.00</h3>
+            <p>A fiery feast of flavors, grilled to perfection!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="food10" >
+        <div class="foodbox" data-id="29">
+            <img src="grilledChicken.jpg" alt="Grilled Spring Chicken" width="200">
+            <h3>Grilled Spring Chicken<br>RM 12.50</h3>
+            <p>Taste the freshness of spring in every bite!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+    <br><h2>Desserts</h2>
+    <div class="food11">    
+    
+        <div class="foodbox" data-id="30">
+            <img src="basbosa.jpg" alt="basbosa" width="200">
+            <h3>Basbosa<br>RM 6.00</h3>
+            <p>A bite of Basbosa, a burst of sweet syrupy goodness!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="31">
+            <img src="kunafa.jpg" alt="Cheese Kunafa" width="200">
+            <h3>Kunafa (Cheese)<br>RM 17.90</h3>
+            <p>A sweet and savory delight, oozing with creamy cheese!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="32">
+            <img src="baklava.jpeg" alt="Baklava" width="200">
+            <h3>Baklava<br>RM 13.50</h3>
+            <p>Crispy, sweet, and nutty - a trifecta of taste!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="33">
+            <img src="turkishdelight.jpeg" alt="turkish delight" width="200">
+            <h3>Turkish Delight<br>RM 13.50</h3>
+            <p>A taste of Turkey’s tradition, in a delightful little package!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <hr>
+    <br><h2>Beverages</h2><br>
+    <br><br><h3>FRESH JUICES</h3><br>
+    <div class="food12">
+        <div class="foodbox" data-id="34">
+            <img src="watermelonJuice.jpg" alt="watermelon juice" width="200">
+            <h3>Watermelon Juice<br>RM 6.00</h3>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="35">
+            <img src="lemo.jpg" alt="Lemon Juice" width="200">
+            <h3>Lemon Juice<br>RM 4.00</h3>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="36">
+            <img src="Mint.jpg" alt="Lemon Mint Juice" width="200">
+            <h3>Lemon Mint Juice<br>RM 6.00</h3>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="37">
+            <img src="mango.jpg" alt="Mango Juice" width="200">
+            <h3>Mango Juice<br>RM 7.50</h3>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <div class="food13">
+        <div class="foodbox" data-id="38">
+            <img src="orange.jpg" alt="Orange Juice" width="200">
+            <h3>Orange Juice<br>RM 5.00</h3>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div> 
+    </div>
+    <br><h3>MILKSHAKES</h3><br>      
+    <div class="food14">
+ 
+        <div class="foodbox" data-id="39">
+            <img src="chocmilkshake.jpg" alt="Chocolate Milkshake" width="200">
+            <h3>Chocolate Milkshake<br>RM 8.00</h3>
+            <p>A velvety voyage of rich chocolate!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="40">
+            <img src="vanillamilkshak.jpeg" alt="Vanilla Milkshake" width="200">
+            <h3>Vanilla Milkshake<br>RM 8.00</h3>
+            <p>A classic comfort in a creamy concoction!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="41">
+            <img src="oreomilkshake.jpg" alt="Oreo Milkshake" width="200">
+            <h3>Oreo Milkshake<br>RM 9.50</h3>
+            <p>Crunchy cookies meet creamy delight!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <br><h3>HOT BEVERAGES</h3>
+    <div class="food15">
+
+        <div class="foodbox" data-id="41">
+            <img src="chai.jpg" alt="Chai" width="200">
+            <h3>Chai<br>RM 6.00</h3>
+            <p>A warm hug in a mug!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>   
+        <div class="foodbox" data-id="42"> 
+            <img src="coffee.jpeg" alt="Cafe Latte" width="200">
+            <h3>Cafe Latte<br>RM 8.00</h3>
+            <p>Your daily dose of sunshine in a cup!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="foodbox" data-id="43">
+            <img src="turkishcoffee.jpg" alt="Turkish Coffee" width="200">
+            <h3>Turkish Coffee<br>RM 9.00</h3>
+            <p>A strong sip of tradition, steeped in flavor!<br><br></p>
+            <div class="quantity-selector">
+                <button class="decrease-quantity">-</button>
+                <input type="number" class="quantity-input" value="1" min="1">
+                <button class="increase-quantity">+</button>
+            </div>            
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+
+      <footer>
+        <p> CONTACT INFO : +60127674673 | daliasza.atar@gmail.com | <img src="iglogo.jpeg" width="10"> dalias.za.atar</p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      </body>
+      </html>

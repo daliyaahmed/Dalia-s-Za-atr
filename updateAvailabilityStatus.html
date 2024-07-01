@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="updateAvailabilityStatus.js"></script>
+    <link rel="stylesheet" type="text/css" href="updateAvailabilityStatus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poiret+One&family=Sail&family=Splash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <hr>
+        <h1>Dalia's <img src="logo.png" width="100">Za'atar</h1>
+        <hr>
+    </header>
+
+    <h1>Update Availability Status</h1>
+    <div class="food-items" id="foodItemsContainer">
+        <!-- Food items will be listed here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "updateAvailability.php",
+            success: function(response) {
+                $("#foodItemsContainer").html(response);
+            }
+        });
+    });
+    </script>
+</body>
+</html>

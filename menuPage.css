@@ -1,0 +1,246 @@
+header, footer {
+    background-color: #1f0e06; 
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px; 
+    color: white;
+    opacity: 1;
+}
+  
+  footer p {
+    font-size: 18px; 
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body{
+    overflow-y: auto;
+}
+
+body {
+    background: url('background2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+  
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px; 
+}
+
+
+.box {
+  background-color: #ea9b42;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 138px; 
+  font-family: "Beau Rivage",cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+
+.food1 {
+    display:flex;
+    justify-content: space-around; 
+  }
+
+  .food2 {
+    display:flex;
+    justify-content: space-around; 
+  }.food3 {
+    display:flex;
+    justify-content: space-around; 
+  }.food4 {
+    display:flex;
+    justify-content: space-around; 
+  }.food5 {
+    display:flex;
+    justify-content: space-around; 
+  }.food6 {
+    display:flex;
+    justify-content: space-around; 
+  }.food7 {
+    display:flex;
+    justify-content: space-around; 
+  }.food8 {
+    display:flex;
+    justify-content: space-around; 
+  }.food9 {
+    display:flex;
+    justify-content: space-around; 
+  }.food10 {
+    display:flex;
+    justify-content: space-around; 
+  }.food11 {
+    display:flex;
+    justify-content: space-around; 
+  }.food12 {
+    display:flex;
+    justify-content: space-around; 
+  }.food13 {
+    display:flex;
+    justify-content: space-around; 
+  }.food14 {
+    display:flex;
+    justify-content: space-around; 
+  }.food15 {
+    display:flex;
+    justify-content: space-around; 
+  }
+
+.foodbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #3e5d3a;
+    color: white;
+  }
+
+  .foodbox h3, .foodbox p {
+    margin: 10px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: "Sail", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+  }
+
+  h3 {
+    text-align: center;
+    color: white;
+  }
+
+  .foodbox h2, .foodbox h3, .foodbox p {
+    margin: 10px 0;
+  }
+
+  .foodbox button {
+    background-color: #7ba569;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.foodbox button:hover {
+    opacity: 0.8;
+}
+
+.cart {
+    text-align: right;
+}
+
+.cart button {
+    background-color: #7ba569;
+    color: white;
+    padding: 5px 7px;
+    margin: 4px auto;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+.cart button:hover {
+    opacity: 0.8;
+}
+
+/* Style the select element */
+#beveragesDropdown {
+    width: 50px;
+    height: 35px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #ea9b42;
+}
+
+/* Style the options in the dropdown */
+#beveragesDropdown option {
+    padding: 10px;
+}
+
+/* Change the appearance when hovering over an option */
+#beveragesDropdown option:hover {
+    background-color: #ea9b42;
+}
+
+
+.quantity-selector {
+  display: flex;         
+  align-items: center;   
+}
+
+.quantity-selector button {
+  width: 30px;           
+  height: 30px;          
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  cursor: pointer;      
+  text-align: center;
+  color: black;
+}
+
+.quantity-selector input {
+  width: 30px;           
+  height: 30px; 
+  text-align: center;    
+  margin: 0 5px;        
+  border: 1px solid #ccc;
+}
+
+#Logout {
+  background-color: #ffa101;
+  color: white;
+  padding: 10px 15px; /* Adjust padding to make the button smaller */
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto; /* Allow button width to adjust based on content */
+  font-size: 14px; /* Adjust font size to make the button smaller */
+}
+
+#Logout:hover {
+  opacity: 0.8;
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+}
+
+.button-container button,
+.button-container a {
+  margin: 0 5px; /* Adjust margin to reduce space between buttons */
+}
